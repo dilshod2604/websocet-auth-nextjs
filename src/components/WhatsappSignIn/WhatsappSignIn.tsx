@@ -8,6 +8,7 @@ import { GrGithub } from "react-icons/gr";
 import whatsapp from "../../assets/whatsapp-1.png";
 import Image from "next/image";
 import { Option } from "antd/es/mentions";
+import { signIn } from "next-auth/react";
 const Prefix = (
   <Form.Item noStyle>
     <Select className={scss.prefixSelector}>
@@ -36,8 +37,12 @@ const WhatsappSignIn: FC = () => {
           </Button>
         </Form>
         <div className={scss.fast_signin_buttons}>
-          <Button icon={<FcGoogle />}>Sign in with Google</Button>
-          <Button icon={<GrGithub />}>Sign in with GitHub</Button>
+          <Button icon={<FcGoogle />} onClick={() => signIn("google")}>
+            Sign in with Google
+          </Button>
+          <Button icon={<GrGithub />} onClick={() => signIn("github")}>
+            Sign in with GitHub
+          </Button>
         </div>
       </div>
     </div>
