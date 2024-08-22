@@ -1,10 +1,11 @@
-import MyPhone from "@/components/myPhone/MyPhone";
-import "./globals.scss";
 import HomePage from "./home/page";
-export default function Home() {
+import "./globals.scss";
+import Layout from "@/components/Layout";
+
+export default function MyPhone() {
   return (
-    <>
+    <Layout>
       <HomePage />
-    </>
+    </Layout>
   );
 }

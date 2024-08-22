@@ -1,0 +1,24 @@
+.HomePage {
+  width: 100%;
+  .content {
+    width: 100%;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+  }
+  .link {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #21212136;
+    padding: 3px;
+  }
+  .link img {
+    width: 100%;
+    height: 100%;
+  }
+}
