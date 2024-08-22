@@ -1,11 +1,11 @@
 import Layout from "@/components/Layout";
-import Link from "next/link";
+import WhatsappLoginForm from "@/components/WhatsappLoginForm/WhatsappLoginForm";
 import React from "react";
 
 const Whatsapp = () => {
   return (
     <Layout>
-      <Link href="/">to home</Link>
+      <WhatsappLoginForm />
     </Layout>
   );
 };
