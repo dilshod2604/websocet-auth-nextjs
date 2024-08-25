@@ -1,0 +1,62 @@
+.MessageArea {
+  width: 100%;
+  height: 300px;
+  background-image: url(../../assets/bacground.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 5px;
+  .messeges {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .user {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 5px;
+  }
+  .user_avatar {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .user_avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .user_message {
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .message_text {
+    font-size: 10px;
+  }
+  #my_message {
+    display: flex;
+    flex-direction: column-reverse;
+    column-gap: 5px;
+  }
+  #my_message .user_message {
+    background: rgb(220, 248, 199);
+  }
+}
+.MessageArea::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+.MessageArea::-webkit-scrollbar-thumb {
+  width: 5px;
+  height: 30px;
+  background: linear-gradient(purple, blue);
+  border-radius: 10px;
+}
+.MessageArea::-webkit-scrollbar-track {
+  background: #ccc;
+  width: 10px;
+}

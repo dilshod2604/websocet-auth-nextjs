@@ -7,12 +7,11 @@ import React from "react";
 
 const SignIn = () => {
   const { data: session } = useSession();
-  console.log("🚀 ~ SignIn ~ session:", session)
- 
+  console.log("🚀 ~ SignIn ~ session:", session);
+
   return (
     <Layout>
-      <WhatsappSignIn />
-      {/* <MyChat /> */}
+      {!session ? <WhatsappSignIn /> : <MyChat session={session} />}
     </Layout>
   );
 };

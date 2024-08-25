@@ -1,0 +1,38 @@
+.Chats {
+  width: 100%;
+  .content {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+  }
+  .chats_search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .list_of_chats {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 3px;
+    background: #eee;
+    border-radius: 5px;
+  }
+  .chat_img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .chat_img img {
+    width: 100%;
+    height: 100%;
+  }
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+}
